@@ -13,21 +13,6 @@
 
 ---
 
-## 📁 **Project Structure**
-
-Rainfall_Predictor/
-├── app.py # Main Flask application
-├── model/ # ML model and associated files
-├── static/ # Static assets (CSS, JS, images)
-├── templates/ # HTML templates for frontend
-├── requirements.txt # Required Python packages
-├── Dockerfile # Docker configuration
-└── .env # Environment variables (if needed)
-
-markdown
-Copy
-Edit
-
 ### 🔄 **Structure Setup Steps**
 
 1. **app.py** – This is the main Flask application script where routing and ML inference happens.
