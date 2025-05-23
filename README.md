@@ -1,57 +1,94 @@
-🌧️ Rainfall Predictor
-Rainfall Predictor is a web application built with Flask that uses a machine learning model to forecast rainfall based on radar and weather-related input features. It offers a simple user interface for entering data and getting instant predictions, and supports Docker for easy deployment.
+# 🌧️ **Rainfall Predictor**
 
-✨ Key Features
-🔍 Rainfall Prediction using a trained ML model
+**Rainfall Predictor** is a machine learning-powered web application that forecasts rainfall based on weather and radar input features. Built with **Flask**, it provides a simple and responsive user interface for entering input data and receiving real-time predictions. The project also includes a **Dockerfile** for containerized deployment.
 
-🖥️ User-friendly Web Interface built with Flask and HTML templates
+---
 
-🐳 Docker Support for portable deployment
+## 🧠 **Key Features**
 
-🧠 Modular Design with separate folders for models, static assets, and templates
+- **Rainfall Forecasting** using a pre-trained machine learning model  
+- **Flask Web Interface** for interactive data input and output  
+- **Docker Support** for seamless deployment  
+- **Clean and Modular Structure** for easy navigation and maintenance  
 
-📦 Installation
-Clone the repository:
+---
 
-bash
+## 📁 **Project Structure**
+
+Rainfall_Predictor/
+├── app.py # Main Flask application
+├── model/ # ML model and associated files
+├── static/ # Static assets (CSS, JS, images)
+├── templates/ # HTML templates for frontend
+├── requirements.txt # Required Python packages
+├── Dockerfile # Docker configuration
+└── .env # Environment variables (if needed)
+
+markdown
 Copy
 Edit
+
+### 🔄 **Structure Setup Steps**
+
+1. **app.py** – This is the main Flask application script where routing and ML inference happens.
+2. **model/** – Place your trained machine learning model here (e.g., `model.pkl`).
+3. **templates/** – Store HTML files (e.g., `index.html`) for the web interface.
+4. **static/** – Keep CSS, JavaScript, and image assets.
+5. **requirements.txt** – Lists all Python dependencies needed to run the app.
+6. **Dockerfile** – Defines the Docker image to build the containerized application.
+7. **.env (optional)** – Use to store environment variables securely.
+
+---
+
+## ⚙️ **Installation**
+
+Follow these steps to run the project locally:
+
+### 1. **Clone the Repository**
+`bash
 git clone https://github.com/Shivam-KT/Rainfall_Predictor.git
 cd Rainfall_Predictor
-Install dependencies:
-
+2. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Run the app:
-
+3. Run the Application
 bash
 Copy
 Edit
 python app.py
-Open your browser and go to:
+Then, open your browser and visit:
+👉 http://localhost:5000
 
-arduino
-Copy
-Edit
-http://localhost:5000
 🐳 Docker Deployment
-Build and run the container:
+To run the project using Docker:
 
+1. Build the Docker Image
 bash
 Copy
 Edit
 docker build -t rainfall-predictor .
-docker run -p 5000:5000 rainfall-predictor
-📁 Project Structure
-csharp
+2. Run the Container
+bash
 Copy
 Edit
-Rainfall_Predictor/
-├── app.py           # Main Flask application
-├── model/           # ML model files
-├── static/          # Static assets (CSS, JS)
-├── templates/       # HTML templates
-├── requirements.txt # Python packages
-└── Dockerfile       # Docker configuration
+docker run -p 5000:5000 rainfall-predictor
+Access the application at:
+👉 http://localhost:5000
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork the repository, make changes, and open a pull request.
+
+Steps:
+
+Fork the project
+
+Create a new branch (git checkout -b feature-name)
+
+Commit your changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature-name)
+
+Create a new Pull Request
